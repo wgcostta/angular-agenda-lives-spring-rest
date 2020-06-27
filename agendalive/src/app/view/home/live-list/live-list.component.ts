@@ -26,6 +26,15 @@ export class LiveListComponent implements OnInit {
         console.log(this.livesPrevious);
       }
     );
+
+    this.liveService.getLivesWithFlag('next').subscribe(
+      data => {
+        this.livesPrevious = data.content;
+        console.log(this.livesPrevious);
+      }
+    );
   }
+
+
 
 }
