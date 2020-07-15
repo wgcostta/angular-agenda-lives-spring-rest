@@ -21,11 +21,14 @@
                   >{{ live.liveName }}</span
                 >
                 <span fxFlex="5"></span>
-                <span
-                  style="font-size: 0.7rem;"
+                <mat-chip
+                  class="mat-chip-date"
                   fxFlex="25"
-                  fxLayoutAlign="end center"
-                  >{{ live.liveDate | localDateTime }}</span
+                  fxLayoutAlign="center center"
+                >
+                  <span style="font-size: 0.7rem;">{{
+                    live.liveDate | localDateTime
+                  }}</span></mat-chip
                 >
               </p>
               <p>
@@ -71,11 +74,17 @@
                   >{{ live.liveName }}</span
                 >
                 <span fxFlex="5"></span>
-                <span
-                  style="font-size: 0.7rem;"
+                <mat-chip
+                  class="mat-chip-date"
                   fxFlex="25"
-                  fxLayoutAlign="end center"
-                  >{{ live.liveDate | localDateTime }}</span
+                  fxLayoutAlign="center center"
+                >
+                  <span
+                    style="font-size: 0.7rem;"
+                    fxFlex="25"
+                    fxLayoutAlign="end center"
+                    >{{ live.liveDate | localDateTime }}</span
+                  ></mat-chip
                 >
               </p>
               <p>
