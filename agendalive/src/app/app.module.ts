@@ -8,12 +8,14 @@ import { HomeComponent } from "./view/home/home.component";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
-import { LiveListComponent } from "./view/home/live-list/live-list.component";
+import { LiveListComponent } from "./view/live-list/live-list.component";
 import { MatTabsModule } from "@angular/material/tabs";
 import { MatCardModule } from "@angular/material/card";
 import { HttpClientModule } from "@angular/common/http";
 import { LocalDateTimePipe } from "./shared/pipe/local-date-time.pipe";
 import { MatChipsModule } from "@angular/material/chips";
+import { MatDialogModule } from "@angular/material/dialog";
+import { LiveFormDialogComponent } from "./view/live-form-dialog/live-form-dialog.component";
 
 @NgModule({
   declarations: [
@@ -21,8 +23,10 @@ import { MatChipsModule } from "@angular/material/chips";
     HomeComponent,
     LiveListComponent,
     LocalDateTimePipe,
+    LiveFormDialogComponent,
   ],
   imports: [
+    MatDialogModule,
     MatChipsModule,
     HttpClientModule,
     BrowserModule,
