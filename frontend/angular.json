@@ -133,8 +133,5 @@
       }
     }
   },
-  "defaultProject": "agendalive",
-  "cli": {
-    "analytics": "7e1cefd4-a70b-4b4e-a390-47b6bf8a9c8b"
-  }
+  "defaultProject": "agendalive"
 }
